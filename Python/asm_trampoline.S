@@ -15,7 +15,7 @@ _Py_trampoline_func_start:
     ret
 #endif // __x86_64__
 #if defined(__aarch64__) && defined(__AARCH64EL__) && !defined(__ILP32__)
-    // ARM64 little endian, 64bit ABI
+    // ARM64 little endian, 64 bit ABI
     // generate with aarch64-linux-gnu-gcc 12.1
     stp     x29, x30, [sp, -16]!
     mov     x29, sp
